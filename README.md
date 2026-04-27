@@ -1,4 +1,4 @@
-### Hi there 👋
+### Bio
 
 <!--
 **joel-razor1/joel-razor1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,21 +14,15 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I'm a Backend Engineer cuurently working with IBM for the product @instana with background in Information Technology. I have foundational level experience in different field in Computer Science eg: Backend Development, Frontend Development, Cloud Native Development, DevOps with a soft touch in Blockchain and Machine Learning concepts. I did B.Tech in IT from School of Engineering, CUSAT. 
+At present, Software Engineering is my profession and I'm known for asking too many stupid questions. :)
 
-#### Summary :rocket:
+#### Summary
 
-- 🎲  Backend Engineer @ instana @ IBM
-- 💻  Java, Linux, React.js and **more**
-- 🥼 🧪 Interest in Physics do to some contribution in the field of Quantum Computing
-- 👨‍🎓  Bachelor Degree in IT @ CUSAT
-
-
+- Software Engineer (Backend) at IBM Software. Currently focusing on observability domain.
+- Can build software solutions in any relevant programming language and technlogies at least in a hacky way since frontier AI Models are accessible now.
+- Interested in various fields in Maths, Computer Science, Physics, speaking Languages and Cultures.
+- Hold Masters Degree in AIML with specialisation in NLP.
 
 
-
-<div>
-<a href="https://github.com/joel-razor1">
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joel-razor1&layout=compact&langs_count=7&theme=dracula"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=joel-razor1&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-</div>
+#### Quote that I live by:
+"I only know one thing, and that is I know nothing." - derived from Socrates
