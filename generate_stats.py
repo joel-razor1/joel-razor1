@@ -33,8 +33,13 @@ def get_recent_commits():
     return pd.DataFrame(data)
 
 df = get_recent_commits()
-summary = df.groupby(['date', 'lang']).size().unstack(fill_value=0)
-summary.to_json('stats.json')
 
-summary.plot(kind='bar', stacked=True)
-plt.savefig('chart.svg')
+if not df.empty:
+    summary = df.groupby(['date', 'lang']).size().unstack(fill_value=0)
+    summary.to_json('stats.json')
+    
+    summary.plot(kind='bar', stacked=True)
+    plt.savefig('chart.svg')
+    print("Success: Chart generated and saved.")
+else:
+    print("No recent commit data found. Skipping chart generation.")
