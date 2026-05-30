@@ -17,15 +17,19 @@ def get_recent_commits():
     
     data = []
     for event in events:
-        if event['type'] == 'PushEvent':
-            date = event['created_at'][:10]
-            for commit in event['payload']['commits']:
-                # Fetch detailed commit info to get filenames
-                c_url = f"https://api.github.com/repos/{event['repo']['name']}/commits/{commit['sha']}"
-                files = requests.get(c_url, headers=HEADERS).json().get('files', [])
-                for f in files:
-                    ext = f['filename'].split('.')[-1]
-                    data.append({'date': date, 'lang': ext})
+        if event.get('type') == 'PushEvent':
+            payload = event.get('payload', {})
+            if 'commits' in payload:
+                date = event['created_at'][:10]
+                for commit in payload['commits']:
+                    # Your existing commit processing logic
+                    c_url = f"https://api.github.com/repos/{event['repo']['name']}/commits/{commit['sha']}"
+                    file_resp = requests.get(c_url, headers=HEADERS)
+                    if file_resp.status_code == 200:
+                        files = file_resp.json().get('files', [])
+                        for f in files:
+                            ext = f['filename'].split('.')[-1]
+                            data.append({'date': date, 'lang': ext})
     return pd.DataFrame(data)
 
 df = get_recent_commits()
